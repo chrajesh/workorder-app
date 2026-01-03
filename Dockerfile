@@ -12,6 +12,10 @@ RUN npm ci
 # Copy source code
 COPY . .
 
+# Set the public path for production (update this URL to match your Cloud Run URL)
+ARG PUBLIC_PATH=https://workorder-app-488099994870.us-south1.run.app/
+ENV PUBLIC_PATH=$PUBLIC_PATH
+
 # Build the application
 RUN npm run build
 

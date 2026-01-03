@@ -30,7 +30,7 @@ export default defineConfig({
     // You need to set a unique value that is not equal to other applications
     uniqueName: "workorder_app",
     // publicPath must be configured if using manifest
-    publicPath: "http://localhost:8081/",
+    publicPath: process.env.PUBLIC_PATH || "http://localhost:8081/",
   },
 
   experiments: {
