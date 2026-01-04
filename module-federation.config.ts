@@ -2,7 +2,7 @@ export const mfConfig = {
   name: "workorder_app",
   exposes: {},
   remotes: {
-    home_app: "home_app@https://storage.googleapis.com/home-app/mf-manifest.json",
+    home_app: "home_app@https://storage.cloud.google.com/home-app/cors.json",
   },
   shared: ["react", "react-dom"],
 };
